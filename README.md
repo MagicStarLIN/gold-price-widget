@@ -37,7 +37,3 @@
 - `GoldPriceWidgetShared/`: 数据模型、缓存与 Provider
 - `GoldPriceWidgetTests/`: 解析层基础测试
 
-## 当前限制
-
-- Widget 刷新频率受系统时间线策略限制，不能保证秒级实时。
-- 当前代码已生成工程描述与源码，但本机若未安装完整 Xcode，将无法直接用 `xcodebuild` 完成编译验证。
