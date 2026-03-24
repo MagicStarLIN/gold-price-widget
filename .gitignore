@@ -1,0 +1,32 @@
+.DS_Store
+
+# Xcode user data
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# Build products
+build/
+DerivedData/
+.build/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# App bundles and archives
+*.app
+*.appex
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+
+# Local environment files
+.env
+.env.*
+
+# Cursor / editor local files
+.cursor/
+.vscode/

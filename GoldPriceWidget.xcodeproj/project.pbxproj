@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E0BEC9630044D3A9AF3D9C /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F0FABB03BEBDE8543664E /* AppConfig.swift */; };
+		04A462C16F4A60C41E37DA83 /* QuoteSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66893C173223BDBF8FF73D1 /* QuoteSnapshot.swift */; };
+		09650134FC41E611BC7B9CF0 /* MockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA289FA8ABA1EEBD50FBE2AC /* MockQuote.swift */; };
+		09C8D99114600EA289B501EA /* QuoteSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66893C173223BDBF8FF73D1 /* QuoteSnapshot.swift */; };
+		116905D856062BA70C1F28AE /* GoldPriceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655C7014AEAF21B9336D274 /* GoldPriceProvider.swift */; };
+		12D5CD530957F5AC6A9327AE /* ShgoldProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392DBA995E542673A5DB069 /* ShgoldProvider.swift */; };
+		1642A541D205637B29119E92 /* GoldPriceWidgetWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 651575350BCEEEFF184075D1 /* GoldPriceWidgetWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27F318AD49937355581CE3E2 /* CacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E9B18B543B297CE7AEACA /* CacheStore.swift */; };
+		3C6C6C42A8EC2D6967231763 /* ShgoldProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392DBA995E542673A5DB069 /* ShgoldProvider.swift */; };
+		4730B978060616828A383277 /* GoldPriceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655C7014AEAF21B9336D274 /* GoldPriceProvider.swift */; };
+		5B7BD2183C21F99161093A36 /* RefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8DD79F872058808070AB5A /* RefreshViewModel.swift */; };
+		5DE7B3B1F8B95BF46D9AFC79 /* GoldPriceTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD187F7A8943BA02BC3978D4 /* GoldPriceTimelineProvider.swift */; };
+		668E74E8004202F54BB2F152 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F0FABB03BEBDE8543664E /* AppConfig.swift */; };
+		67A9FDA314133B952D9B165A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F20444FB401DB03A13A156 /* APIClient.swift */; };
+		75F1BD9677AD1EBC89792387 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5BC2A8E31A120F91FB8077 /* ContentView.swift */; };
+		7724CA1D7AAE59C817CAC837 /* GoldPriceWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380ABE9E09321281C94E497D /* GoldPriceWidgetBundle.swift */; };
+		7D0ED406246B15DEC1EE842E /* DisplayFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63A47CABE4AA8DCB9E84A1 /* DisplayFormatter.swift */; };
+		80744E2B2BB3B933B568F162 /* ShgoldProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F228219A8C5C41F467386E /* ShgoldProviderTests.swift */; };
+		820B4E93370FB60B1BAD7406 /* QuoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14DFD14DC85833AB9506E2 /* QuoteRepository.swift */; };
+		86448AC6EFBD43DC8AAFAE11 /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F76BB0339E0333DFA71C695 /* SmallWidgetView.swift */; };
+		8E72F2121D851C28C05C434C /* QuoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14DFD14DC85833AB9506E2 /* QuoteRepository.swift */; };
+		94F3E787D20C7729C845BA43 /* CacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E9B18B543B297CE7AEACA /* CacheStore.swift */; };
+		9B7178F45707E48475CA20D1 /* MockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA289FA8ABA1EEBD50FBE2AC /* MockQuote.swift */; };
+		A004C9C58EBBCF6FD8B30CF8 /* GoldQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A165F95307005769E51A03A /* GoldQuote.swift */; };
+		A4CF1AAC84EAC211C97F406A /* QuoteSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66893C173223BDBF8FF73D1 /* QuoteSnapshot.swift */; };
+		B922D3F7534C5C05B921C5EF /* ShgoldInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E48C5CAE5F6B493CA5CF112 /* ShgoldInstrument.swift */; };
+		C68A18D11AA016D59C59F171 /* ShgoldInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E48C5CAE5F6B493CA5CF112 /* ShgoldInstrument.swift */; };
+		CC1D9348BE75D2D2945074DB /* GoldPriceWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3272C819EF931536179B33C1 /* GoldPriceWidgetApp.swift */; };
+		D20A453F569B7976B8055172 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F20444FB401DB03A13A156 /* APIClient.swift */; };
+		D64A692E3003B74F8DD95F2B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F20444FB401DB03A13A156 /* APIClient.swift */; };
+		DF21D6ECAD5DCEB66B5AF9E9 /* GoldPriceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1655C7014AEAF21B9336D274 /* GoldPriceProvider.swift */; };
+		E1560F8763396196DBD59F80 /* GoldQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A165F95307005769E51A03A /* GoldQuote.swift */; };
+		E8E8870503B023F186E0DC8F /* DisplayFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63A47CABE4AA8DCB9E84A1 /* DisplayFormatter.swift */; };
+		E9AA95802DA38E6E70BC2CB6 /* DisplayFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63A47CABE4AA8DCB9E84A1 /* DisplayFormatter.swift */; };
+		EA9053A05ACE77CDA1063980 /* ShgoldInstrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E48C5CAE5F6B493CA5CF112 /* ShgoldInstrument.swift */; };
+		F19B274ECDF5BC9F8851EAB6 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F0FABB03BEBDE8543664E /* AppConfig.swift */; };
+		F21A75AAA7D8117C47141DC4 /* ShgoldProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392DBA995E542673A5DB069 /* ShgoldProvider.swift */; };
+		F5D6A631A01A613E3A505E09 /* QuoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F14DFD14DC85833AB9506E2 /* QuoteRepository.swift */; };
+		F73E1B781788706BDDD88A0A /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FA5C8083883FBE24FEE92C /* MediumWidgetView.swift */; };
+		F78C22DAD7AFB21A32E7C0D7 /* GoldQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A165F95307005769E51A03A /* GoldQuote.swift */; };
+		FA19213D09735DB8530D3730 /* MockQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA289FA8ABA1EEBD50FBE2AC /* MockQuote.swift */; };
+		FA842F068018BD0648851157 /* CacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E9B18B543B297CE7AEACA /* CacheStore.swift */; };
+		FF8877AEDB5F899EEAD045B8 /* GoldPriceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FD05DFFC403E7C81DEAE13 /* GoldPriceWidget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F74D68B89975DF58D377088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02FA9FFCFFD2CBC46F448F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C67AD7080FDAB5D09BF4000E;
+			remoteInfo = GoldPriceWidgetApp;
+		};
+		E85EACEC8C66A7921DC8C583 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02FA9FFCFFD2CBC46F448F7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CCCB7244AA71B1D0FAD5C12;
+			remoteInfo = GoldPriceWidgetWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		151DCA1CC7EF1F4C7B434057 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1642A541D205637B29119E92 /* GoldPriceWidgetWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C5BC2A8E31A120F91FB8077 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1655C7014AEAF21B9336D274 /* GoldPriceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldPriceProvider.swift; sourceTree = "<group>"; };
+		3272C819EF931536179B33C1 /* GoldPriceWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldPriceWidgetApp.swift; sourceTree = "<group>"; };
+		380ABE9E09321281C94E497D /* GoldPriceWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldPriceWidgetBundle.swift; sourceTree = "<group>"; };
+		3A7F0FABB03BEBDE8543664E /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		3A961CC4CE18B41180FADD2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		43784967293E2446EB625D6C /* GoldPriceWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldPriceWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FA5C8083883FBE24FEE92C /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		4A165F95307005769E51A03A /* GoldQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldQuote.swift; sourceTree = "<group>"; };
+		4F76BB0339E0333DFA71C695 /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
+		5F14DFD14DC85833AB9506E2 /* QuoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteRepository.swift; sourceTree = "<group>"; };
+		6392DBA995E542673A5DB069 /* ShgoldProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShgoldProvider.swift; sourceTree = "<group>"; };
+		651575350BCEEEFF184075D1 /* GoldPriceWidgetWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GoldPriceWidgetWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F228219A8C5C41F467386E /* ShgoldProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShgoldProviderTests.swift; sourceTree = "<group>"; };
+		7D46BD176078B24D3BD3EF08 /* GoldPriceWidgetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoldPriceWidgetApp.entitlements; sourceTree = "<group>"; };
+		7E48C5CAE5F6B493CA5CF112 /* ShgoldInstrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShgoldInstrument.swift; sourceTree = "<group>"; };
+		90F20444FB401DB03A13A156 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		AA5E9B18B543B297CE7AEACA /* CacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheStore.swift; sourceTree = "<group>"; };
+		B66893C173223BDBF8FF73D1 /* QuoteSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteSnapshot.swift; sourceTree = "<group>"; };
+		CD187F7A8943BA02BC3978D4 /* GoldPriceTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldPriceTimelineProvider.swift; sourceTree = "<group>"; };
+		D786F2316F322E65CB71FC08 /* GoldPriceWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldPriceWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19419E48D7897E357413F63 /* GoldPriceWidgetWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoldPriceWidgetWidget.entitlements; sourceTree = "<group>"; };
+		EDED52983AB712C48DFF8898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF63A47CABE4AA8DCB9E84A1 /* DisplayFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayFormatter.swift; sourceTree = "<group>"; };
+		EF8DD79F872058808070AB5A /* RefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewModel.swift; sourceTree = "<group>"; };
+		F6FD05DFFC403E7C81DEAE13 /* GoldPriceWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldPriceWidget.swift; sourceTree = "<group>"; };
+		FA289FA8ABA1EEBD50FBE2AC /* MockQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockQuote.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		510CBAB42EA120CB80ABB2F3 /* GoldPriceWidgetApp */ = {
+			isa = PBXGroup;
+			children = (
+				7D46BD176078B24D3BD3EF08 /* GoldPriceWidgetApp.entitlements */,
+				3272C819EF931536179B33C1 /* GoldPriceWidgetApp.swift */,
+				EDED52983AB712C48DFF8898 /* Info.plist */,
+				89F2E5C3E0943908A5F4EEE8 /* ViewModels */,
+				B27D50C1DF9BF8F32EE37450 /* Views */,
+			);
+			path = GoldPriceWidgetApp;
+			sourceTree = "<group>";
+		};
+		52E8674E8DAA3DEF28318718 /* GoldPriceWidgetShared */ = {
+			isa = PBXGroup;
+			children = (
+				64B4BA55D44656B421E562E3 /* Config */,
+				895AEEA97D4D212A36E7D704 /* Models */,
+				ADADCD1269BBFEA50797AAB9 /* Preview */,
+				673E0A01EB330823DB8D35B6 /* Services */,
+			);
+			path = GoldPriceWidgetShared;
+			sourceTree = "<group>";
+		};
+		5F43BD6808CD0047D5B4B3A6 = {
+			isa = PBXGroup;
+			children = (
+				510CBAB42EA120CB80ABB2F3 /* GoldPriceWidgetApp */,
+				52E8674E8DAA3DEF28318718 /* GoldPriceWidgetShared */,
+				D6AA459F2696A02F1D26F00F /* GoldPriceWidgetTests */,
+				92DD79D4AA9E8D6E834EF50A /* GoldPriceWidgetWidget */,
+				A705FA8791A5A27491F7FC28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64B4BA55D44656B421E562E3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3A7F0FABB03BEBDE8543664E /* AppConfig.swift */,
+				EF63A47CABE4AA8DCB9E84A1 /* DisplayFormatter.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		673E0A01EB330823DB8D35B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				90F20444FB401DB03A13A156 /* APIClient.swift */,
+				AA5E9B18B543B297CE7AEACA /* CacheStore.swift */,
+				1655C7014AEAF21B9336D274 /* GoldPriceProvider.swift */,
+				5F14DFD14DC85833AB9506E2 /* QuoteRepository.swift */,
+				6392DBA995E542673A5DB069 /* ShgoldProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		895AEEA97D4D212A36E7D704 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A165F95307005769E51A03A /* GoldQuote.swift */,
+				B66893C173223BDBF8FF73D1 /* QuoteSnapshot.swift */,
+				7E48C5CAE5F6B493CA5CF112 /* ShgoldInstrument.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89F2E5C3E0943908A5F4EEE8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF8DD79F872058808070AB5A /* RefreshViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8CCB7BD5F6F9956D1E319B79 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47FA5C8083883FBE24FEE92C /* MediumWidgetView.swift */,
+				4F76BB0339E0333DFA71C695 /* SmallWidgetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92DD79D4AA9E8D6E834EF50A /* GoldPriceWidgetWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CD187F7A8943BA02BC3978D4 /* GoldPriceTimelineProvider.swift */,
+				F6FD05DFFC403E7C81DEAE13 /* GoldPriceWidget.swift */,
+				380ABE9E09321281C94E497D /* GoldPriceWidgetBundle.swift */,
+				E19419E48D7897E357413F63 /* GoldPriceWidgetWidget.entitlements */,
+				3A961CC4CE18B41180FADD2D /* Info.plist */,
+				8CCB7BD5F6F9956D1E319B79 /* Views */,
+			);
+			path = GoldPriceWidgetWidget;
+			sourceTree = "<group>";
+		};
+		A705FA8791A5A27491F7FC28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D786F2316F322E65CB71FC08 /* GoldPriceWidget.app */,
+				43784967293E2446EB625D6C /* GoldPriceWidgetTests.xctest */,
+				651575350BCEEEFF184075D1 /* GoldPriceWidgetWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADADCD1269BBFEA50797AAB9 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				FA289FA8ABA1EEBD50FBE2AC /* MockQuote.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		B27D50C1DF9BF8F32EE37450 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C5BC2A8E31A120F91FB8077 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D6AA459F2696A02F1D26F00F /* GoldPriceWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				70F228219A8C5C41F467386E /* ShgoldProviderTests.swift */,
+			);
+			path = GoldPriceWidgetTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A5D16FA48B9E82A03911551 /* GoldPriceWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86AD8D2C7BA89797C5A2DFA6 /* Build configuration list for PBXNativeTarget "GoldPriceWidgetTests" */;
+			buildPhases = (
+				98C403B7122E0A43443976C4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF577B9E9E72713231DE57C /* PBXTargetDependency */,
+			);
+			name = GoldPriceWidgetTests;
+			packageProductDependencies = (
+			);
+			productName = GoldPriceWidgetTests;
+			productReference = 43784967293E2446EB625D6C /* GoldPriceWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CCCB7244AA71B1D0FAD5C12 /* GoldPriceWidgetWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66209A8EF84A07928C7535F0 /* Build configuration list for PBXNativeTarget "GoldPriceWidgetWidgetExtension" */;
+			buildPhases = (
+				C223DD01436F81CED365DDFD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoldPriceWidgetWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = GoldPriceWidgetWidgetExtension;
+			productReference = 651575350BCEEEFF184075D1 /* GoldPriceWidgetWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C67AD7080FDAB5D09BF4000E /* GoldPriceWidgetApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F94E9CF9430701AA11A55A5C /* Build configuration list for PBXNativeTarget "GoldPriceWidgetApp" */;
+			buildPhases = (
+				206501C2B0CE9D22FA464A46 /* Sources */,
+				151DCA1CC7EF1F4C7B434057 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CA374E774595968D196466B /* PBXTargetDependency */,
+			);
+			name = GoldPriceWidgetApp;
+			packageProductDependencies = (
+			);
+			productName = GoldPriceWidgetApp;
+			productReference = D786F2316F322E65CB71FC08 /* GoldPriceWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02FA9FFCFFD2CBC46F448F7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1A5D16FA48B9E82A03911551 = {
+						ProvisioningStyle = Automatic;
+					};
+					7CCCB7244AA71B1D0FAD5C12 = {
+						DevelopmentTeam = 746338L894;
+						ProvisioningStyle = Automatic;
+					};
+					C67AD7080FDAB5D09BF4000E = {
+						DevelopmentTeam = 746338L894;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E62916E30DF4AA57FB21457D /* Build configuration list for PBXProject "GoldPriceWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5F43BD6808CD0047D5B4B3A6;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C67AD7080FDAB5D09BF4000E /* GoldPriceWidgetApp */,
+				1A5D16FA48B9E82A03911551 /* GoldPriceWidgetTests */,
+				7CCCB7244AA71B1D0FAD5C12 /* GoldPriceWidgetWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		206501C2B0CE9D22FA464A46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A9FDA314133B952D9B165A /* APIClient.swift in Sources */,
+				F19B274ECDF5BC9F8851EAB6 /* AppConfig.swift in Sources */,
+				94F3E787D20C7729C845BA43 /* CacheStore.swift in Sources */,
+				75F1BD9677AD1EBC89792387 /* ContentView.swift in Sources */,
+				E9AA95802DA38E6E70BC2CB6 /* DisplayFormatter.swift in Sources */,
+				4730B978060616828A383277 /* GoldPriceProvider.swift in Sources */,
+				CC1D9348BE75D2D2945074DB /* GoldPriceWidgetApp.swift in Sources */,
+				E1560F8763396196DBD59F80 /* GoldQuote.swift in Sources */,
+				09650134FC41E611BC7B9CF0 /* MockQuote.swift in Sources */,
+				F5D6A631A01A613E3A505E09 /* QuoteRepository.swift in Sources */,
+				09C8D99114600EA289B501EA /* QuoteSnapshot.swift in Sources */,
+				5B7BD2183C21F99161093A36 /* RefreshViewModel.swift in Sources */,
+				C68A18D11AA016D59C59F171 /* ShgoldInstrument.swift in Sources */,
+				3C6C6C42A8EC2D6967231763 /* ShgoldProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C403B7122E0A43443976C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64A692E3003B74F8DD95F2B /* APIClient.swift in Sources */,
+				668E74E8004202F54BB2F152 /* AppConfig.swift in Sources */,
+				27F318AD49937355581CE3E2 /* CacheStore.swift in Sources */,
+				7D0ED406246B15DEC1EE842E /* DisplayFormatter.swift in Sources */,
+				DF21D6ECAD5DCEB66B5AF9E9 /* GoldPriceProvider.swift in Sources */,
+				F78C22DAD7AFB21A32E7C0D7 /* GoldQuote.swift in Sources */,
+				9B7178F45707E48475CA20D1 /* MockQuote.swift in Sources */,
+				8E72F2121D851C28C05C434C /* QuoteRepository.swift in Sources */,
+				04A462C16F4A60C41E37DA83 /* QuoteSnapshot.swift in Sources */,
+				EA9053A05ACE77CDA1063980 /* ShgoldInstrument.swift in Sources */,
+				F21A75AAA7D8117C47141DC4 /* ShgoldProvider.swift in Sources */,
+				80744E2B2BB3B933B568F162 /* ShgoldProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C223DD01436F81CED365DDFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20A453F569B7976B8055172 /* APIClient.swift in Sources */,
+				03E0BEC9630044D3A9AF3D9C /* AppConfig.swift in Sources */,
+				FA842F068018BD0648851157 /* CacheStore.swift in Sources */,
+				E8E8870503B023F186E0DC8F /* DisplayFormatter.swift in Sources */,
+				116905D856062BA70C1F28AE /* GoldPriceProvider.swift in Sources */,
+				5DE7B3B1F8B95BF46D9AFC79 /* GoldPriceTimelineProvider.swift in Sources */,
+				FF8877AEDB5F899EEAD045B8 /* GoldPriceWidget.swift in Sources */,
+				7724CA1D7AAE59C817CAC837 /* GoldPriceWidgetBundle.swift in Sources */,
+				A004C9C58EBBCF6FD8B30CF8 /* GoldQuote.swift in Sources */,
+				F73E1B781788706BDDD88A0A /* MediumWidgetView.swift in Sources */,
+				FA19213D09735DB8530D3730 /* MockQuote.swift in Sources */,
+				820B4E93370FB60B1BAD7406 /* QuoteRepository.swift in Sources */,
+				A4CF1AAC84EAC211C97F406A /* QuoteSnapshot.swift in Sources */,
+				B922D3F7534C5C05B921C5EF /* ShgoldInstrument.swift in Sources */,
+				12D5CD530957F5AC6A9327AE /* ShgoldProvider.swift in Sources */,
+				86448AC6EFBD43DC8AAFAE11 /* SmallWidgetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CA374E774595968D196466B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CCCB7244AA71B1D0FAD5C12 /* GoldPriceWidgetWidgetExtension */;
+			targetProxy = E85EACEC8C66A7921DC8C583 /* PBXContainerItemProxy */;
+		};
+		EBF577B9E9E72713231DE57C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C67AD7080FDAB5D09BF4000E /* GoldPriceWidgetApp */;
+			targetProxy = 5F74D68B89975DF58D377088 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06CEA1C77BA19297459F4BD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GoldPriceWidgetWidget/GoldPriceWidgetWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 746338L894;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GoldPriceWidgetWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuchanglin.GoldPriceWidget.widget;
+				PRODUCT_NAME = GoldPriceWidgetWidgetExtension;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		33A3A17CF7C74F33B152F6E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuchanglin.GoldPriceWidgetTests;
+				PRODUCT_NAME = GoldPriceWidgetTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoldPriceWidgetApp.app/Contents/MacOS/GoldPriceWidgetApp";
+			};
+			name = Release;
+		};
+		3AB33A925D1838F5FFFD60D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GoldPriceWidgetApp/GoldPriceWidgetApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 746338L894;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GoldPriceWidgetApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuchanglin.GoldPriceWidget;
+				PRODUCT_NAME = GoldPriceWidget;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		41E5FECF5DFE7DFF5B6EFD3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		562EFA5B99E66316B7745DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuchanglin.GoldPriceWidgetTests;
+				PRODUCT_NAME = GoldPriceWidgetTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoldPriceWidgetApp.app/Contents/MacOS/GoldPriceWidgetApp";
+			};
+			name = Debug;
+		};
+		A0D8F77DD665943B77701A82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GoldPriceWidgetApp/GoldPriceWidgetApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 746338L894;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GoldPriceWidgetApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuchanglin.GoldPriceWidget;
+				PRODUCT_NAME = GoldPriceWidget;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EA45EE5AEF033001E1F53F89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		FE1918D34C44E7E46ECB0744 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GoldPriceWidgetWidget/GoldPriceWidgetWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 746338L894;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GoldPriceWidgetWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuchanglin.GoldPriceWidget.widget;
+				PRODUCT_NAME = GoldPriceWidgetWidgetExtension;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66209A8EF84A07928C7535F0 /* Build configuration list for PBXNativeTarget "GoldPriceWidgetWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1918D34C44E7E46ECB0744 /* Debug */,
+				06CEA1C77BA19297459F4BD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		86AD8D2C7BA89797C5A2DFA6 /* Build configuration list for PBXNativeTarget "GoldPriceWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				562EFA5B99E66316B7745DF6 /* Debug */,
+				33A3A17CF7C74F33B152F6E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E62916E30DF4AA57FB21457D /* Build configuration list for PBXProject "GoldPriceWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA45EE5AEF033001E1F53F89 /* Debug */,
+				41E5FECF5DFE7DFF5B6EFD3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F94E9CF9430701AA11A55A5C /* Build configuration list for PBXNativeTarget "GoldPriceWidgetApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D8F77DD665943B77701A82 /* Debug */,
+				3AB33A925D1838F5FFFD60D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02FA9FFCFFD2CBC46F448F7A /* Project object */;
+}

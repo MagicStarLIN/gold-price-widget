@@ -1,0 +1,82 @@
+name: GoldPriceWidget
+options:
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    MACOSX_DEPLOYMENT_TARGET: 14.0
+targets:
+  GoldPriceWidgetApp:
+    type: application
+    bundleId: com.liuchanglin.GoldPriceWidget
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: GoldPriceWidgetApp
+      - path: GoldPriceWidgetShared
+    info:
+      path: GoldPriceWidgetApp/Info.plist
+    entitlements:
+      path: GoldPriceWidgetApp/GoldPriceWidgetApp.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.liuchanglin.GoldPriceWidget
+        PRODUCT_NAME: GoldPriceWidget
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 746338L894
+    dependencies:
+      - target: GoldPriceWidgetWidgetExtension
+        embed: true
+
+  GoldPriceWidgetWidgetExtension:
+    type: app-extension
+    bundleId: com.liuchanglin.GoldPriceWidget.widget
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: GoldPriceWidgetWidget
+      - path: GoldPriceWidgetShared
+    info:
+      path: GoldPriceWidgetWidget/Info.plist
+    entitlements:
+      path: GoldPriceWidgetWidget/GoldPriceWidgetWidget.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.liuchanglin.GoldPriceWidget.widget
+        PRODUCT_NAME: GoldPriceWidgetWidgetExtension
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 746338L894
+        SKIP_INSTALL: YES
+
+  GoldPriceWidgetTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - path: GoldPriceWidgetTests
+      - path: GoldPriceWidgetShared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.liuchanglin.GoldPriceWidgetTests
+        PRODUCT_NAME: GoldPriceWidgetTests
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Automatic
+    dependencies:
+      - target: GoldPriceWidgetApp
+
+schemes:
+  GoldPriceWidget:
+    build:
+      targets:
+        GoldPriceWidgetApp: all
+        GoldPriceWidgetWidgetExtension: all
+        GoldPriceWidgetTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: false
+      targets:
+        - name: GoldPriceWidgetTests
