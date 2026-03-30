@@ -37,3 +37,6 @@
 - `GoldPriceWidgetShared/`: 数据模型、缓存与 Provider
 - `GoldPriceWidgetTests/`: 解析层基础测试
 
+## 效果展示
+<img width="365" height="189" alt="image" src="https://github.com/user-attachments/assets/6e5aadcc-939f-4279-9c9a-a0a3a8a0f73d" />
+
